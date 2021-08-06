@@ -27,10 +27,6 @@ int main()
     {
         pool->TaskAdd(threadTask);
     }
-
-
     sleep(10);
-
-
     return 0;
 }

@@ -49,5 +49,4 @@ private:
 
     std::shared_ptr<ThreadPool> threadHolder_;
 };
-
 #endif

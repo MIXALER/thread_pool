@@ -109,7 +109,6 @@ void ThreadPool::Run()
     }
     pthread_t pid2;
     pthread_create(&pid2, nullptr, StartAdjust, static_cast<void *>(this));
-
 }
 
 void ThreadPool::AdjustThread()

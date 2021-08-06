@@ -54,7 +54,6 @@ private:
     pthread_mutex_t taskMutex_;
     std::queue<std::shared_ptr<ThreadTask>> taskQueue_;
     std::deque<std::shared_ptr<Thread>> threadVector_;
-
 };
 
 #endif

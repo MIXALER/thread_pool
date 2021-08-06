@@ -78,7 +78,7 @@ void Thread::Start()
     ThreadData *threadData = new ThreadData(&running_, &shutDown_, &joined_, threadHolder_, cond_, mutex_);
     if (pthread_create(&pid_, nullptr, callBack, threadData))
     {
-        std::cerr << __FILE__ << __LINE__ << ": create thread falied" << std::endl;
+        std::cerr << __FILE__ << __LINE__ << ": create thread failed" << std::endl;
         exit(1);
     }
 }
